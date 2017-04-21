@@ -1,6 +1,7 @@
 FROM alpine
 
-RUN apk add bash
-RUN apk add gnupg
+RUN apk update
+RUN apk add --no-cache bash
+RUN apk add --no-cache gnupg
 
 ENTRYPOINT ["bash"]
