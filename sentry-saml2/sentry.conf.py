@@ -1,3 +1,2 @@
-from sentry.conf.server import *
-
+# Custom appened config
 SENTRY_FEATURES['organizations:sso-saml2'] = True

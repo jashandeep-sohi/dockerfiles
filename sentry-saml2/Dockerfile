@@ -12,4 +12,4 @@ COPY . /usr/src/sentry
 
 RUN pip install -r requirements.txt
 
-RUN cp sentry.conf.py $SENTRY_CONF/
+RUN cat sentry.conf.py >> $SENTRY_CONF/sentry.conf.py
