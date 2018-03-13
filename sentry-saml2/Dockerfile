@@ -11,3 +11,5 @@ ENV PYTHONPATH /usr/src/sentry
 COPY . /usr/src/sentry
 
 RUN pip install -r requirements.txt
+
+RUN cp sentry.conf.py $SENTRY_CONF/
