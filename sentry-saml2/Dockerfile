@@ -1,14 +1,14 @@
-FROM sentry:latest
+FROM sentry:8.22.0
+
+LABEL maintainer="Jashandeep Sohi <jashandeep.s.sohi@gmail.com>"
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
   libxmlsec1-dev \
   pkg-config
 
-WORKDIR /usr/src/sentry
+COPY . /usr/src/sentry-saml2
 
-ENV PYTHONPATH /usr/src/sentry
-
-COPY . /usr/src/sentry
+WORKDIR /usr/src/sentry-saml2
 
 RUN pip install -r requirements.txt
 
