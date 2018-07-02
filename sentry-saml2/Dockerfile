@@ -1,4 +1,4 @@
-FROM sentry:8.22.0
+FROM sentry:9.0.0
 
 LABEL maintainer="Jashandeep Sohi <jashandeep.s.sohi@gmail.com>"
 
